@@ -16,6 +16,7 @@ com\portfolio\aem\Service\Seducacion.class
 com\portfolio\aem\Dto\dtoExperiencia.class
 com\portfolio\aem\Repository\RExperiencia.class
 com\portfolio\aem\Entity\Experiencia.class
+.netbeans_automatic_build
 com\portfolio\aem\Controller\CExperiencia.class
 com\portfolio\aem\Entity\hys.class
 com\portfolio\aem\Service\Shys.class
