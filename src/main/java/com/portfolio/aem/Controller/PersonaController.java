@@ -23,36 +23,35 @@ import org.springframework.web.bind.annotation.RestController;
 public class PersonaController{
     @Autowired IPersonaService ipersonaService;
     
-    @GetMapping("/personas/traer")
-    public List<Persona> getPersona(){
-        return ipersonaService.getPersona();
-    }
+    @GetMapping
+public List<Persona> getPersona(){
+    return ipersonaService.getPersona();
+}
+
+@PostMapping("/crear")
+public String createPersona(@RequestBody Persona persona){
+    ipersonaService.savePersona(persona);
+    return "La persona fue creada correctamente";
+}
+
+@DeleteMapping("/borrar/{id}")
+public String deletePersona(@PathVariable Long id){
+    ipersonaService.deletePersona(id);
+    return "La persona fue eliminada correctamente";
+}
+
+@PutMapping("/editar/{id}")
+public Persona editPersona(@PathVariable Long id, 
+        @RequestParam("nombre") String nuevoNombre,
+        @RequestParam("apellido") String nuevoApellido,
+        @RequestParam("img") String nuevoImg){
+    Persona persona = ipersonaService.findPersona(id);
     
-    @PostMapping("/personas/crear")
-    public String createPersona(@RequestBody Persona persona){
-        ipersonaService.savePersona(persona);
-        return "La persona fue creada correctamente";
-    }
+    persona.setNombre(nuevoNombre);
+    persona.setApellido(nuevoApellido);
+    persona.setImg(nuevoImg);
     
-    @DeleteMapping("/personas/borrar/{id}")
-    public String deletePersona(@PathVariable Long id){
-        ipersonaService.deletePersona(id);
-        return "La persona fue eliminada correctamente";
-    }
-    
-    @PutMapping("/personas/editar{id}")
-    public Persona editPersona(@PathVariable Long id, 
-            @RequestParam("nombre") String nuevoNombre,
-            @RequestParam("apellido") String nuevoApellido,
-            @RequestParam("img") String nuevoImg){
-        Persona persona = ipersonaService.findPersona(id);
-        
-        persona.setNombre(nuevoNombre);
-        persona.setApellido(nuevoApellido);
-        persona.setImg(nuevoImg);
-        
-        ipersonaService.savePersona(persona);
-        return persona;
-        
-    }
+    ipersonaService.savePersona(persona);
+    return persona;
+}
 }
