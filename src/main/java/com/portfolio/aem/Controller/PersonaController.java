@@ -54,4 +54,8 @@ public Persona editPersona(@PathVariable Long id,
     ipersonaService.savePersona(persona);
     return persona;
 }
+@GetMapping("/{id}")
+public Persona getPersonaById(@PathVariable Long id){
+    return ipersonaService.findPersona(id);
+}
 }
