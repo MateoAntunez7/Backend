@@ -53,8 +53,8 @@ public class PersonaController {
     }
 
     @GetMapping("/{id}")
-    public Persona getPersonaById(@RequestBody Long id) {
+    public Persona getPersonaById(@PathVariable Long id) {
         return ipersonaService.findPersona(id);
     }
-}
 
+}
