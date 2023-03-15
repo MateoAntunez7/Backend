@@ -35,6 +35,5 @@ com\portfolio\aem\AemApplication.class
 com\portfolio\aem\Repository\IPersonaRepository.class
 com\portfolio\aem\Security\Service\UsuarioService.class
 com\portfolio\aem\Security\Repository\iUsuarioRepository.class
-com\portfolio\aem\Interface\IPersonaService.class
 com\portfolio\aem\Security\jwt\JwtProvider.class
 com\portfolio\aem\Security\Dto\NuevoUsuario.class
