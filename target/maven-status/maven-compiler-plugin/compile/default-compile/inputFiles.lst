@@ -1,6 +1,8 @@
 C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Service\ImpPersonaService.java
 C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Security\Entity\UsuarioPrincipal.java
 C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Repository\IPersonaRepository.java
+C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Dto\dtoProyectos.java
+C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Entity\Proyectos.java
 C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Security\Entity\Rol.java
 C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Security\Controller\AuthController.java
 C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Security\jwt\JwtProvider.java
@@ -13,6 +15,7 @@ C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Security\Service\R
 C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Dto\dtoHys.java
 C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Security\Dto\NuevoUsuario.java
 C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Service\Shys.java
+C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Service\SProyectos.java
 C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Dto\dtoEducacion.java
 C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Security\Entity\Usuario.java
 C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Security\MainSecurity.java
@@ -30,10 +33,12 @@ C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Repository\RExperi
 C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Entity\Educacion.java
 C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Entity\Persona.java
 C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Controller\PersonaController.java
+C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Repository\RProyectos.java
 C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Security\jwt\JwtEntryPoint.java
 C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Service\SExperiencia.java
 C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\AemApplication.java
 C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Security\Dto\LoginUsuario.java
+C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Controller\CProyectos.java
 C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Security\Repository\iRolRepository.java
 C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Entity\hys.java
 C:\Argentina Programa\Backend\src\main\java\com\portfolio\aem\Security\Enums\RolNombre.java
